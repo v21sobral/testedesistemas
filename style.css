@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f2f5f9;
+
+    color: #333;
+
+}
+
+
+/* CABEÇALHO */
+
+header {
+
+    position: relative;
+
+    background-color: #b00020;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+}
+
+header .imagem-cabecalho {
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 20px;
+
+    width: 85px;
+
+    height: 85px;
+
+    object-fit: contain;
+
+    transform: translateY(-50%);
+
+}
+
+header h1 {
+
+    margin-bottom: 5px;
+
+}
+
+header p {
+
+    color: #dbe8ff;
+
+}
+
+
+/* CONTEÚDO */
+
+main {
+
+    max-width: 900px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+}
+
+
+/* CARD */
+
+.card {
+
+    background-color: white;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+}
+
+.card h2 {
+
+    color: #b00020;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* CAMPOS */
+
+.campo {
+
+    margin-bottom: 18px;
+
+}
+
+.campo label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+
+}
+
+.campo input,
+.campo select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+}
+
+.campo input:focus,
+.campo select:focus {
+
+    outline: none;
+
+    border-color: #0d47a1;
+
+}
+
+
+/* BOTÃO */
+
+button {
+
+    width: 100%;
+
+    padding: 13px;
+
+    background-color: #b00020;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background-color: #ffc4cf;
+
+}
+
+
+/* MENSAGENS */
+
+#mensagem {
+
+    margin-top: 20px;
+
+    padding: 10px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+}
+
+.sucesso {
+
+    color: green;
+
+    background-color: #e6ffe6;
+
+}
+
+.erro {
+
+    color: #b00020;
+
+    background-color: #ffe6e6;
+
+}
+
+
+/* TABELA */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+th {
+
+    background-color: #b00020;
+
+    color: white;
+
+}
+
+th,
+td {
+
+    padding: 12px;
+
+    border: 1px solid #ddd;
+
+    text-align: left;
+
+}
+
+tr:nth-child(even) {
+
+    background-color: #f5f5f5;
+
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    header {
+
+        padding: 25px 90px 25px 15px;
+
+    }
+
+    header .imagem-cabecalho {
+
+        left: 10px;
+
+        width: 65px;
+
+        height: 65px;
+
+    }
+
+    main {
+
+        padding: 10px;
+
+    }
+
+    table {
+
+        font-size: 13px;
+
+    }
+
+}
